@@ -21,12 +21,7 @@ export default function Home() {
           <p className="text-xl text-zinc-500 max-w-2xl leading-relaxed mb-4">
             A comprehensive evaluation of the <strong>MoE Conformer</strong> against state-of-the-art models across dialects, decoding strategies, and hardware configurations.
           </p>
-          <div className="pt-4">
-            <a href="/illustrations" className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-900 hover:bg-zinc-800 text-white font-medium rounded-xl transition-all shadow-md shadow-zinc-900/20">
-              <Layers className="w-5 h-5" />
-              View Architecture Animations
-            </a>
-          </div>
+
         </div>
       </div>
 
@@ -250,6 +245,15 @@ export default function Home() {
         {/* Row 8: Qualitative Analysis Component */}
         <div className="mt-12">
           <QualitativeAnalysis />
+        </div>
+
+        {/* Grand Reveal: Architecture Animations */}
+        <div className="mt-32 mb-16 flex flex-col items-center justify-center text-center">
+          <h2 className="text-2xl font-bold text-zinc-900 mb-6">Want to see how this works under the hood?</h2>
+          <a href="/illustrations" className="inline-flex items-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl transition-all shadow-xl shadow-blue-500/25 hover:-translate-y-1">
+            <Layers className="w-6 h-6" />
+            Reveal Architecture Animations
+          </a>
         </div>
 
       </div>
