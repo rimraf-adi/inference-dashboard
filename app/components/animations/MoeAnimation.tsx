@@ -3,9 +3,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export function MoeAnimation() {
-  const loopTransition = { duration: 6, repeat: Infinity, ease: "easeInOut", times: [0, 0.2, 0.5, 0.8, 1] };
-  const tokenTransition = { duration: 6, repeat: Infinity, ease: "easeInOut", times: [0, 0.15, 0.8, 1] };
-  const pathTransition = { duration: 6, repeat: Infinity, ease: "easeInOut", times: [0, 0.25, 0.7, 1] };
+  const loopTransition = { duration: 6, repeat: Infinity, ease: "easeInOut" as const, times: [0, 0.2, 0.5, 0.8, 1] };
+  const tokenTransition = { duration: 6, repeat: Infinity, ease: "easeInOut" as const, times: [0, 0.15, 0.8, 1] };
+  const pathTransition = { duration: 6, repeat: Infinity, ease: "easeInOut" as const, times: [0, 0.25, 0.7, 1] };
 
   return (
     <div className="relative w-full max-w-5xl aspect-[21/9] bg-zinc-900 flex items-center justify-center p-8 overflow-hidden rounded-xl font-sans">

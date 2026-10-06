@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 export function KenLmAnimation() {
-  const loopTransition = { duration: 8, repeat: Infinity, ease: "easeInOut", times: [0, 0.2, 0.5, 0.8, 1] };
+  const loopTransition = { duration: 8, repeat: Infinity, ease: "easeInOut" as const, times: [0, 0.2, 0.5, 0.8, 1] };
 
   return (
     <div className="relative w-full aspect-auto min-h-[500px] bg-zinc-900 flex flex-col p-8 overflow-hidden rounded-xl font-sans border border-zinc-800">

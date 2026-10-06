@@ -7,8 +7,8 @@ export function CtcAnimation() {
   const greedyTokens = ['क', 'क', 'ε', 'म', 'म'];
   const colors = ['#3b82f6', '#3b82f6', '#71717a', '#a855f7', '#a855f7'];
 
-  const loopTransition = { duration: 6, repeat: Infinity, ease: "easeInOut", times: [0, 0.2, 0.5, 0.8, 1] };
-  const floatTransition = { duration: 6, repeat: Infinity, ease: "easeInOut", times: [0, 0.4, 0.5, 0.9, 1] };
+  const loopTransition = { duration: 6, repeat: Infinity, ease: "easeInOut" as const, times: [0, 0.2, 0.5, 0.8, 1] };
+  const floatTransition = { duration: 6, repeat: Infinity, ease: "easeInOut" as const, times: [0, 0.4, 0.5, 0.9, 1] };
 
   return (
     <div className="relative w-full max-w-6xl aspect-auto min-h-[500px] bg-zinc-900 flex flex-col p-8 overflow-hidden rounded-xl font-sans border border-zinc-800">
