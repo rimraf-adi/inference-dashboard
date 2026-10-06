@@ -18,9 +18,15 @@ export default function Home() {
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-zinc-900 leading-tight">
             Performance Analytics <br className="hidden md:block"/> & Benchmarks
           </h1>
-          <p className="text-xl text-zinc-500 max-w-2xl leading-relaxed">
+          <p className="text-xl text-zinc-500 max-w-2xl leading-relaxed mb-4">
             A comprehensive evaluation of the <strong>MoE Conformer</strong> against state-of-the-art models across dialects, decoding strategies, and hardware configurations.
           </p>
+          <div className="pt-4">
+            <a href="/illustrations" className="inline-flex items-center gap-2 px-6 py-3 bg-zinc-900 hover:bg-zinc-800 text-white font-medium rounded-xl transition-all shadow-md shadow-zinc-900/20">
+              <Layers className="w-5 h-5" />
+              View Architecture Animations
+            </a>
+          </div>
         </div>
       </div>
 
