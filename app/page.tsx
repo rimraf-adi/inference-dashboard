@@ -4,6 +4,7 @@ import {
   CpuLatencyChart, KenLmAblationChart, DecoderOverheadChart, AudioDurationLatencyChart 
 } from './components/DashboardCharts';
 import { QualitativeAnalysis } from './components/QualitativeAnalysis';
+import { DatasetInsights } from './components/DatasetInsights';
 
 export default function Home() {
   return (
@@ -28,6 +29,9 @@ export default function Home() {
       {/* Main Dashboard Grid */}
       <div className="px-6 md:px-12 py-12 max-w-6xl mx-auto w-full space-y-12 animate-in slide-in-from-bottom-8 duration-700 fade-in delay-150 fill-mode-both">
         
+        {/* Datasets */}
+        <DatasetInsights />
+
         {/* Row 1: KPI Cards */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="p-6 bg-white border border-zinc-200 rounded-3xl shadow-sm hover:shadow-md transition-shadow">
