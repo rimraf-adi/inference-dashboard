@@ -5,6 +5,7 @@ const datasets = [
   {
     name: 'Shrutilipi (Marathi)',
     hours: '~250 hrs',
+    size: '~22.6 GB',
     utterances: '180K+',
     domain: 'News Broadcasts',
     description: 'Mined from All India Radio (AIR) bulletins. Highly formal standard Marathi with professional anchors and studio-quality acoustics.',
@@ -15,6 +16,7 @@ const datasets = [
   {
     name: 'Kathbath (Marathi)',
     hours: '~450 hrs',
+    size: '~14.5 GB',
     utterances: '200K+',
     domain: 'Read Speech',
     description: 'Crowdsourced recordings of read sentences. Features high demographic diversity across genders and ages with relatively clean audio.',
@@ -25,6 +27,7 @@ const datasets = [
   {
     name: 'Project Vaani (Marathi)',
     hours: '~300 hrs',
+    size: '~34.5 GB',
     utterances: '150K+',
     domain: 'Spontaneous',
     description: 'Unscripted, spontaneous conversational speech collected across multiple districts. High acoustic and environmental diversity.',
@@ -35,6 +38,7 @@ const datasets = [
   {
     name: 'RESPIN (Train & Test)',
     hours: '~50 hrs',
+    size: '~5.8 GB',
     utterances: '35K+',
     domain: 'Agriculture / Telephony',
     description: 'Real agricultural queries from farmers. Extremely noisy telephony audio featuring heavy rural dialects (Ahirani, Malvani, Varhadi).',
@@ -62,14 +66,18 @@ export function DatasetInsights() {
               <h3 className="font-bold text-zinc-800 leading-tight">{dataset.name}</h3>
             </div>
             
-            <div className="flex gap-4 mb-4 pb-4 border-b border-zinc-200/50">
+            <div className="flex justify-between mb-4 pb-4 border-b border-zinc-200/50">
               <div>
-                <div className="text-2xl font-bold text-zinc-900">{dataset.hours}</div>
-                <div className="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Duration</div>
+                <div className="text-xl font-bold text-zinc-900">{dataset.hours}</div>
+                <div className="text-[10px] font-semibold text-zinc-500 uppercase tracking-wider">Duration</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-zinc-900">{dataset.utterances}</div>
-                <div className="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Utterances</div>
+                <div className="text-xl font-bold text-zinc-900">{dataset.size}</div>
+                <div className="text-[10px] font-semibold text-zinc-500 uppercase tracking-wider">Size</div>
+              </div>
+              <div>
+                <div className="text-xl font-bold text-zinc-900">{dataset.utterances}</div>
+                <div className="text-[10px] font-semibold text-zinc-500 uppercase tracking-wider">Utterances</div>
               </div>
             </div>
             
