@@ -4,9 +4,9 @@ import { Database, Mic, Radio, Sprout } from 'lucide-react';
 const datasets = [
   {
     name: 'Shrutilipi (Marathi)',
-    hours: '~250 hrs',
-    size: '~22.6 GB',
-    utterances: '180K+',
+    hours: '~1,250 hrs',
+    size: '148 GB',
+    utterances: '850K+',
     domain: 'News Broadcasts',
     description: 'Mined from All India Radio (AIR) bulletins. Highly formal standard Marathi with professional anchors and studio-quality acoustics.',
     icon: <Radio className="w-6 h-6 text-blue-400" />,
@@ -15,9 +15,9 @@ const datasets = [
   },
   {
     name: 'Kathbath (Marathi)',
-    hours: '~450 hrs',
-    size: '~14.5 GB',
-    utterances: '200K+',
+    hours: '185.2 hrs',
+    size: '~10.1 GB',
+    utterances: '120K+',
     domain: 'Read Speech',
     description: 'Crowdsourced recordings of read sentences. Features high demographic diversity across genders and ages with relatively clean audio.',
     icon: <Mic className="w-6 h-6 text-purple-400" />,
@@ -26,9 +26,9 @@ const datasets = [
   },
   {
     name: 'Project Vaani (Marathi)',
-    hours: '~300 hrs',
-    size: '~34.5 GB',
-    utterances: '150K+',
+    hours: '~500 hrs',
+    size: '~58 GB',
+    utterances: '350K+',
     domain: 'Spontaneous',
     description: 'Unscripted, spontaneous conversational speech collected across multiple districts. High acoustic and environmental diversity.',
     icon: <Database className="w-6 h-6 text-emerald-400" />,
