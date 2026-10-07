@@ -37,9 +37,9 @@ const datasets = [
   },
   {
     name: 'RESPIN (Train & Test)',
-    hours: '~50 hrs',
-    size: '~5.8 GB',
-    utterances: '35K+',
+    hours: '1,100+ hrs',
+    size: '>150 GB',
+    utterances: '850K+',
     domain: 'Agriculture / Telephony',
     description: 'Real agricultural queries from farmers. Extremely noisy telephony audio featuring heavy rural dialects (Ahirani, Malvani, Varhadi).',
     icon: <Sprout className="w-6 h-6 text-amber-400" />,
