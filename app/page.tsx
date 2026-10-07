@@ -5,6 +5,7 @@ import {
 } from './components/DashboardCharts';
 import { QualitativeAnalysis } from './components/QualitativeAnalysis';
 import { DatasetInsights } from './components/DatasetInsights';
+import { Deliverables } from './components/Deliverables';
 
 export default function Home() {
   return (
@@ -250,6 +251,9 @@ export default function Home() {
         <div className="mt-12">
           <QualitativeAnalysis />
         </div>
+
+        {/* Row 9: Deliverables / Future Work */}
+        <Deliverables />
 
         {/* Grand Reveal: Architecture Animations */}
         <div className="mt-32 mb-16 flex flex-col items-center justify-center text-center">
